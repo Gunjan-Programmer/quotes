@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #bbc6;
+    
+
+}
+.quote-box{
+    
+    background: #fff;
+    width:70%;
+
+    /* For center the div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* ... */
+
+
+    padding: 40px;
+    /* padding-bottom: 5px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(37, 81, 95, 0.5);
+    /* box-shadow: 0 4px 15px 0 rgb(181, 22, 22) , 0 6px 20px 0 rgb(20, 19, 19); */
+    text-align: center;
+    font-family: 'Cairo Play', sans-serif;
+
+    
+
+}
+.quote-box h2{
+    font-size:  32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quote-box h2::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quote-box blockquote{
+    font-size: 2em;
+    min-height: 110px;
+    
+}
+.quote-box blockquote::before , .quote-box blockquote::after{
+    content: '"';
+
+}
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+   top: 50%;
+   left: -30px;
+
+}
+.blue-text{
+    color: blue;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box .button1{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    /* margin: 0px 15px; */
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+}
+#close-button{
+    background-color: transparent;
+    color: rgb(73, 73, 69);
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+
+}
+#close-button:hover{
+    border: 2px solid black;
+    border-radius: 50%;
+    color: red;
+}
+
+
+.remove-div{
+    display: none;
+}
+
+
+.dev{
+    position: fixed;
+    right:10px;
+    
+    bottom: 10px;
+    
+    color: black;text-decoration:none;
+}
+.dev::before{
+    content: '@';
+    color: rebeccapurple;
+    
+}
+.dev-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    border: 2px solid rgb(225, 105, 105);
+    padding: 20px;
+    border-radius: 15px;
+    
+
+}
+.dev-center::before{
+    content: '<';
+
+
+}
+.dev-center::after{
+    content: '>';
+
+
+}
+.dev-center:hover{
+    border: 1px solid blue;
+    color: cornflowerblue;
+    letter-spacing: 2px;
+}
+.refresh{
+    display: none;
+}
+.refresh-show{
+    display: block;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+
+}
